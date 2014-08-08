@@ -22,4 +22,5 @@
                    :default (constantly true)}
   :javac-options   ["-target" "1.6" "-source" "1.6"]
   :repositories {"conjars" "http://conjars.org/repo/"
-                 "cloudera" {:url "https://repository.cloudera.com/artifactory/cloudera-repos"}})
+                 "cloudera" {:url "https://repository.cloudera.com/artifactory/cloudera-repos"}
+                 "local" "file:///Users/pkallos/.m2/repository" })
