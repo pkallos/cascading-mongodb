@@ -2,9 +2,9 @@
   :description "Cascading MongoDB Tap"
   :url "http://github.com/ifesdjeen/cascading-mongodb"
   :min-lein-version "2.0.0"
-  :dependencies [[org.mongodb/mongo-hadoop-streaming "1.1.0-SNAPSHOT"]
+  :dependencies [[org.mongodb/mongo-hadoop-streaming "1.3.0"]
                  ;; [mongo-hadoop-streaming_cdh3u3  "1.0.0-rc0"]
-                 [org.mongodb/mongo-hadoop-core_cdh3u3 "1.0.0"]
+                 [org.mongodb/mongo-hadoop-core "1.3.0"]
                  [log4j/log4j "1.2.17"]]
   :java-source-paths ["src/main/java"]
   :test-paths        ["src/main/test"]
