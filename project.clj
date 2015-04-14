@@ -1,8 +1,8 @@
-(defproject com.shopstyle/cascading-mongodb "0.0.5"
+(defproject com.shopstyle/cascading-mongodb "0.0.6"
   :description "Cascading MongoDB Tap"
   :url "http://github.com/ifesdjeen/cascading-mongodb"
   :min-lein-version "2.0.0"
-  :dependencies [[org.mongodb/mongo-hadoop-streaming "1.1.0-SNAPSHOT"]
+  :dependencies [[org.mongodb/mongo-hadoop-streaming "1.1.0"]
                  ;; [mongo-hadoop-streaming_cdh3u3  "1.0.0-rc0"]
                  [org.mongodb/mongo-hadoop-core_cdh3u3 "1.0.0"]
                  [log4j/log4j "1.2.17"]]
@@ -22,5 +22,4 @@
                    :default (constantly true)}
   :javac-options   ["-target" "1.6" "-source" "1.6"]
   :repositories {"conjars" "http://conjars.org/repo/"
-                 "cloudera" {:url "https://repository.cloudera.com/artifactory/cloudera-repos"}
-                 "popsugar" "https://maven.sugarops.com/repository/internal" })
+                 "cloudera" {:url "https://repository.cloudera.com/artifactory/cloudera-repos"}})
