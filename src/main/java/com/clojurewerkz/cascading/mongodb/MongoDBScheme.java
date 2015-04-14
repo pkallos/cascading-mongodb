@@ -163,7 +163,7 @@ public class MongoDBScheme extends Scheme<JobConf, RecordReader, OutputCollector
     }
 
     for (String columnFieldName : columnFieldNames) {
-      Object tupleEntry= value.get(columnFieldName);
+      Object tupleEntry= value.getDoc().get(columnFieldName);
       if (tupleEntry != null) {
         result.add(tupleEntry);
       } else if (columnFieldName != this.keyColumnName) {
